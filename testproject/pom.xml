@@ -21,10 +21,11 @@
                     <execution>
                         <phase>package</phase>
                         <goals>
-                            <goal>junk</goal>
+                            <goal>spam</goal>
                         </goals>
                         <configuration>
                             <durationInSeconds>60</durationInSeconds>
+                            <pathToFile>testproject/textToSpam.txt</pathToFile>
                         </configuration>
                     </execution>
                 </executions>

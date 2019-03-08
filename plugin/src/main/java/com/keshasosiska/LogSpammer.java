@@ -7,7 +7,7 @@ import java.io.FileNotFoundException;
 import java.util.Random;
 import java.util.Scanner;
 
-public class LogJunker implements Runnable {
+public class LogSpammer implements Runnable {
     private static final long DT = 500;
     private static final String DEBUG = "[DEBUG] ";
     private static final String INFO = "[INFO] ";
@@ -19,7 +19,7 @@ public class LogJunker implements Runnable {
     private final Random r;
     private final Log log;
 
-    LogJunker(String pathToFile, long endTimeInMs, Log log) {
+    LogSpammer(String pathToFile, long endTimeInMs, Log log) {
         this.pathToFile = pathToFile;
         this.endTimeInMs = endTimeInMs;
         this.r = new Random();
